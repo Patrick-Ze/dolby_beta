@@ -34,7 +34,6 @@ public class SignView extends BaseDialogItem {
         super.init(context, attrs);
         title = SettingHelper.sign_title;
         key = SettingHelper.sign_key;
-        sub = "启用可能会被警告说你在刷云贝";
         setData( true, SettingHelper.getInstance().getSetting(key));
 
         setOnClickListener(view -> {
@@ -43,4 +42,3 @@ public class SignView extends BaseDialogItem {
         });
     }
 }
-
